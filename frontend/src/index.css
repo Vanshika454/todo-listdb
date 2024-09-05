@@ -1,0 +1,99 @@
+:root {
+  --primary: #f60000c8;
+  --light: #EEE;
+  --light-alt: #61759b;
+  --dark: #131A26;
+  --lighter: #0c62d2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
+}
+
+body {
+  background-color: var(--primary);
+  color: var(--light);
+}
+
+
+
+.container {
+  max-width: 200rem;
+  padding: 32px;
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: 50px;
+  text-align: center;
+}
+
+.form {
+  margin-top: 2rem;
+  margin-left: 10rem;
+}
+
+.form input {
+  width: 85%;
+  padding: 3px;
+  color: #878686;
+}
+
+.form button {
+  padding: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+.addButton {
+  background-color: green;
+  color: #EEE;
+}
+
+.enterButton {
+  font-weight: 1000;
+}
+
+.todo {
+  padding: 10px;
+  background-color: #e2dddd;
+  margin-top: 2rem;
+  display: grid;
+  color:#131A26;
+  width: 1100px;
+  margin-left: 25rem;
+  border-radius: 10px;
+  grid-template-columns: 90fr 0.5fr ;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+
+.check-complete .checkbox {
+  background-color: var(--primary);
+
+}
+
+.check-complete .text {
+  text-decoration: line-through;
+}
+
+
+
+.text {
+  margin-left: 1rem;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.delete-todo {
+  display: flex;
+  justify-content: center;
+  background-color: #131A26;
+  color: #EEE;
+  padding: 4px;
+  align-items: center;
+}
